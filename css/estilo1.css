@@ -1,0 +1,231 @@
+ body{
+    font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+margin: 0;
+background-color: #000;
+ }
+ a{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.5) 0%, rgba(51, 8, 103, 0.5) 100%), url(../img/matthew-bargh-h-ca-lst_mg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+ }
+
+
+ .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 150px;
+    margin-right: auto;
+    margin-left: 0;
+    
+}
+nav a{
+    font-weight: 600;
+    padding: 10px;
+}
+nav a:hover{
+    color: white;
+}
+.head {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:  #fff;
+    margin-top: -150px;
+}
+.copy{
+    height: 40px;
+    width: 25cm;
+    color: #fff;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos para la página */
+body {
+    text-align: center;
+}
+
+/* Estilos para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery figure {
+    position: relative;
+    text-align: center; /* Alinea el contenido al centro horizontalmente */
+}
+
+.gallery img {
+    width: 250px;
+    height: 200px;
+    margin: -3%; /* Espacio reducido entre las imágenes */
+    opacity: 0.7;
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.gallery figcaption {
+    display: none;
+    position: absolute;
+    top: 50%; /* Coloca el título en el centro verticalmente */
+    left: 50%; /* Coloca el título en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el título completamente */
+    background-color: rgba(48, 48, 48, 0.7);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0;
+}
+
+.gallery figure:hover figcaption {
+    display: block;
+}
+.espacio-negro {
+    width: 100px; /* Ancho del espacio */
+    height: 150px; /* Altura del espacio */
+    background-color: black; /* Color de fondo negro */
+}
+
+.logo2 {
+    position: relative;
+}
+.logo2 img{
+    position: absolute;
+    bottom: -135px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    
+}
+footer{
+    background-image: linear-gradient(to top, #30d0d0ce 0%, #190335 100%);
+    padding-bottom: 0.1px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.contact-us {
+    width: 40%;
+    color: white;
+}
+.Brand {
+    font-weight: 500;
+    font-size: 40px;
+}
+.Brand+p{
+    font-weight: 500;
+}
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon:hover{
+    background: #fff;
+    color: #764ba2;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 880px){
+    .copy{
+        font-size: 12px;
+        height: 120px;
+        width: 329px;
+    }
+    .logo2 img{
+        position: absolute;
+    bottom: -145px;
+    left: 15px;
+    width: 50px;
+    height: 60px;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
+    .line{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .copy{
+        font-size: 12px;
+        height: 120px;
+        width: 329px;
+    }
+    .logo2 img{
+        position: absolute;
+    bottom: -155px;
+    left: 10px;
+    width: 50px;
+    height: 60px;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
+    .line{
+        width: 90%;
+    }
+}
